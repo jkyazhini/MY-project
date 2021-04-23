@@ -9,6 +9,8 @@ public class PriceEstimator {
 		int cabtype = sc.nextInt();
 		System.out.println("Enter the NoOfKm :");
 		int NoOfKm = sc.nextInt();
+		if(NoOfKm>0)
+		{
 		switch (cabtype) {
 		case 1: {                     /**use the swith case function 
 		                                 then calculate the killometres**/
@@ -25,6 +27,10 @@ public class PriceEstimator {
 			break;
 		}
 		}
+		}
+			else{
+				System.out.println("Enter the valid killometres(above 1)");
+			}
 
 	}
 
